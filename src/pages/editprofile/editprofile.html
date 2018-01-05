@@ -1,0 +1,59 @@
+<ion-content padding class="transparent-header">
+  <ion-header>
+    <ion-navbar hideBackButton >
+      <ion-title align="rigth">PhilantroPosts</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+  <div id="profile-bg" [ngStyle]="{'background-image': 'url(' + user.coverImage +')'}"></div>
+  <div id="content">
+    <div id="profile-info" padding>
+      <img id="profile-image" [src]="user.profileImage" (click)="getPicture()">
+
+
+      <h3 id="profile-name">
+          <ion-item>
+            <ion-label floating>Name</ion-label>
+            <ion-input type="text" [(ngModel)]="user.name" ngControl="name" value="{{user.name}}"></ion-input>
+          </ion-item>
+
+        </h3>
+
+        <ion-item>
+          <ion-label floating>Occupation</ion-label>
+          <ion-input type="text" [(ngModel)]="user.occupation" ngControl="occupation" value={{user.occupation}}></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Location</ion-label>
+          <ion-input type="text" [(ngModel)]="user.location" ngControl="location" value="{{user.location}}"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Description</ion-label>
+          <ion-input type="text" [(ngModel)]="user.description" ngControl="description" value="{{user.description}}"></ion-input>
+        </ion-item>
+
+        <br>
+        <button  small color="purple" (tap)="logForm(user)">Guardar</button>
+
+    </div>
+    <hr/>
+    <br>
+    <br><br><br><br><br>
+    <br><br><br><br>
+    <ion-row class="profile-numbers">
+      <ion-col col-4>
+        <p>Followers</p>
+        <span>{{user.followers}}</span>
+      </ion-col>
+      <ion-col col-4>
+        <p>Following</p>
+        <span>{{user.following}}</span>
+      </ion-col>
+      <ion-col col-4>
+        <p>Posts</p>
+        <span>{{user.posts}}</span>
+      </ion-col>
+    </ion-row>

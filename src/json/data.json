@@ -1,0 +1,155 @@
+{ "social-networks" :[{
+    "name": "Facebook",
+    "api": "",
+    "conect" : "Connected"
+  },
+  {
+      "name": "Linkdln",
+      "api": "",
+      "conect" : "Connect"
+    },
+    {
+        "name": "Instagram",
+        "api": "",
+        "conect" : "Connected"
+      }
+],
+
+  "posts": [{
+      "user": {
+        "id": "1",
+        "name": "Gato Chino",
+        "profileImage": "assets/imgs/gatochino.png",
+        "occupation": "askjda",
+      },
+      "title": "Cat Sushi!",
+      "text": "Learn how to make some sushi without leave a paw in the way",
+      "image": "assets/imgs/gatosushi.jpg",
+      "likes": 34,
+      "comments": 46
+
+    },
+    {
+      "user": {
+        "id": "2",
+        "name": "Gato Aleman",
+        "profileImage": "assets/imgs/gatoaleman.jpg",
+        "occupation": "askjda",
+      },
+      "title": "Make Germany Great Again!",
+      "text": "Greetings pals , lets talk about germany and our nazi mission",
+      "image": "assets/imgs/makegermany.jpg",
+      "likes": 0,
+      "comments": 12
+
+    },
+    {
+      "user": {
+        "id": "3",
+        "name": "Gato Hipster",
+        "profileImage": "assets/imgs/gatolentes.png"
+      },
+      "title": "Japi Merri Cristmas Mai Friens",
+      "text": "Ai wish yu a merri cristmas ai wish yu a merri cristmas an a japi niu yer",
+      "image": "assets/imgs/gatonavidad.jpg",
+      "likes": 12,
+      "comments": 4
+
+    },
+    {
+      "user": {
+        "id": "4",
+        "name": "gatouser",
+        "profileImage": "assets/imgs/gatouser.jpeg"
+      },
+      "title": "Japi Merri Cristmas Mai Friens",
+      "text": "Ai wish yu a merri cristmas ai wish yu a merri cristmas an a japi niu yer",
+      "image": "assets/imgs/gatosushi.jpg",
+      "likes": 12,
+      "comments": 4
+
+    },
+    {
+      "user": {
+        "id": "5",
+        "name": "Gato Hipster",
+        "profileImage": "assets/imgs/gatolentes.png",
+        "occupation": "askjda",
+      },
+      "title": "Japi Merri Cristmas Mai Friens",
+      "text": "Ai wish yu a merri cristmas ai wish yu a merri cristmas an a japi niu yer",
+      "image": "assets/imgs/gatonavidad.jpg",
+      "likes": 12,
+      "comments": 4
+
+    },
+    {
+      "user": {
+        "id": "6",
+        "name": "Gato Chino",
+        "profileImage": "assets/imgs/gatochino.jpg"
+      },
+      "title": "Esta es una imagen",
+      "text": "blahblablahblah",
+      "image": "assets/imgs/gatolentes.png",
+      "likes": 12,
+      "comments": 4
+
+    },
+    {
+      "user": {
+        "id": "7",
+        "name": "Gato Hipster",
+        "profileImage": "assets/imgs/gatolentes.png"
+      },
+      "title": "Japi Merri Cristmas Mai Friens",
+      "text": "Ai wish yu a merri cristmas ai wish yu a merri cristmas an a japi niu yer",
+      "image": "assets/imgs/gatonavidad.jpg",
+      "likes": 12,
+      "comments": 4
+
+    },
+    {
+      "user": {
+        "id": "6",
+        "name": "Gato Chino",
+        "profileImage": "assets/imgs/gatochino.jpg"
+      },
+      "title": "Esta es una imagen",
+      "text": "blahblablahblah",
+      "image": "assets/imgs/gatolentes.png",
+      "likes": 12,
+      "comments": 4
+
+    },
+    {
+      "user": {
+        "id": "7",
+        "name": "Gato Hipster",
+        "profileImage": "assets/imgs/gatolentes.png"
+      },
+      "title": "Japi Merri Cristmas Mai Friens",
+      "text": "Ai wish yu a merri cristmas ai wish yu a merri cristmas an a japi niu yer",
+      "image": "assets/imgs/gatonavidad.jpg",
+      "likes": 12,
+      "comments": 4
+
+    },
+    {
+      "user": {
+        "id": "8",
+        "name": "Gato Chino",
+        "profileImage": "assets/imgs/gatochino.jpg"
+      },
+      "title": "Esta es una imagen",
+      "text": "blahblablahblah",
+      "image": "assets/imgs/gatolentes.png",
+      "likes": 12,
+      "comments": 4
+
+    }
+
+
+
+  ]
+}

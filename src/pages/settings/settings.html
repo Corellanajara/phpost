@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-avatar [navPush]="pushPage" [navParams]="params" (click)="user_redirect()">
+
+      <img [navPush]="pushPage" [navParams]="params" (tap)="profile_redirect(item.user)" src={{user.profileImage}}>
+
+    <ion-title>Settings</ion-title>
+
+    </ion-avatar>
+
+
+    <ion-buttons end>
+      <button ion-button icon-only [navPush]="pushPage" [navParams]="params" (click)="user_redirect()">
+        <ion-icon name="logo-usd">&nbsp;{{user.current}}</ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding>
+  <button ion-item (click)="general()"><ion-icon name='settings' item-start></ion-icon>&nbsp;General</button>
+  <button ion-item (click)="currency()"><ion-icon name='ios-cash' item-start></ion-icon>&nbsp;Currency</button>
+  <button ion-item (click)="socialnetwork()"><ion-icon name='ios-person' item-start></ion-icon>&nbsp;Social Networks</button>
+  <button ion-item (click)="others()"><ion-icon name='ios-build' item-start></ion-icon>&nbsp;Others</button>
+  <button ion-item (click)="campaign()"><ion-icon name='ios-clipboard-outline' item-start></ion-icon>&nbsp;Create Campaign</button>
+
+</ion-content>

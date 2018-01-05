@@ -1,0 +1,95 @@
+{
+  "name": "philanthroposts",
+  "version": "0.0.1",
+  "author": "Ionic Framework",
+  "homepage": "http://ionicframework.com/",
+  "private": true,
+  "scripts": {
+    "clean": "ionic-app-scripts clean",
+    "build": "ionic-app-scripts build",
+    "lint": "ionic-app-scripts lint",
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve"
+  },
+  "dependencies": {
+    "@angular/common": "5.0.3",
+    "@angular/compiler": "5.0.3",
+    "@angular/compiler-cli": "5.0.3",
+    "@angular/core": "5.0.3",
+    "@angular/forms": "5.0.3",
+    "@angular/http": "5.0.3",
+    "@angular/platform-browser": "5.0.3",
+    "@angular/platform-browser-dynamic": "5.0.3",
+    "@ionic-native/camera": "^4.5.2",
+    "@ionic-native/core": "4.4.0",
+    "@ionic-native/facebook": "^4.5.2",
+    "@ionic-native/globalization": "^4.5.2",
+    "@ionic-native/instagram": "^4.5.2",
+    "@ionic-native/native-page-transitions": "^4.5.2",
+    "@ionic-native/push": "^4.5.2",
+    "@ionic-native/splash-screen": "4.4.0",
+    "@ionic-native/status-bar": "4.4.0",
+    "@ionic-native/twitter-connect": "^4.5.2",
+    "@ionic/storage": "^2.1.3",
+    "angular-oauth2-oidc": "^3.1.4",
+    "com.telerik.plugins.nativepagetransitions": "^0.6.5",
+    "cordova-android": "6.3.0",
+    "cordova-instagram-plugin": "^0.5.5",
+    "cordova-plugin-camera": "^3.0.0",
+    "cordova-plugin-device": "^1.1.4",
+    "cordova-plugin-facebook4": "^1.9.1",
+    "cordova-plugin-fcm": "^2.1.2",
+    "cordova-plugin-globalization": "^1.0.8",
+    "cordova-plugin-ionic-webview": "^1.1.16",
+    "cordova-plugin-splashscreen": "^4.0.3",
+    "cordova-plugin-whitelist": "^1.3.1",
+    "cordova-sqlite-storage": "^2.1.4",
+    "cordova-universal-clipboard": "git+https://github.com/Visigo/CordovaClipboard.git",
+    "ionic-angular": "3.9.2",
+    "ionic-plugin-keyboard": "^2.2.1",
+    "ionicons": "3.0.0",
+    "js": "^0.1.0",
+    "phonegap-plugin-push": "^2.1.2",
+    "rxjs": "5.5.2",
+    "sw-toolbox": "3.6.0",
+    "swagger-ts": "0.0.21",
+    "swagger-typescript-codegen": "^1.2.0",
+    "twitter-connect-plugin": "git+https://github.com/chroa/twitter-connect-plugin.git",
+    "zone.js": "0.8.18"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "3.1.5",
+    "typescript": "2.4.2"
+  },
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "ionic-plugin-keyboard": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {},
+      "com.telerik.plugins.nativepagetransitions": {},
+      "cordova-plugin-camera": {},
+      "cordova-plugin-globalization": {},
+      "phonegap-plugin-push": {
+        "FCM_VERSION": "11.0.1"
+      },
+      "cordova-plugin-fcm": {},
+      "cordova-sqlite-storage": {},
+      "cordova-plugin-facebook4": {
+        "APP_ID": "415551565527577",
+        "APP_NAME": "philanthroposts"
+      },
+      "cordova-instagram-plugin": {},
+      "twitter-connect-plugin": {
+        "FABRIC_KEY": "356502698fdeb13205134c7636b6aecef5686a18",
+        "TWITTER_KEY": "kwG2k7x51mUYsv5M4GG5CXkw7",
+        "TWITTER_SECRET": "rEaBQXyzPbwN75XF6FR4cWzQljfZQJnGvp3TT2tJMWmHDdHZ74"
+      }
+    },
+    "platforms": [
+      "android"
+    ]
+  }
+}

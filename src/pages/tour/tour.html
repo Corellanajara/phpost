@@ -1,0 +1,25 @@
+
+
+  <ion-slides pager>
+
+  <ion-slide style="background-color: green">
+    <h3>Swapp right to left  </h3>
+    <img src="assets/imgs/255751-200.png" alt="">
+    <h2>Slide 1</h2>
+
+  </ion-slide>
+
+  <ion-slide style="background-color: blue">
+    <h2>Slide 2</h2>
+  </ion-slide>
+
+  <ion-slide style="background-color: red">
+    <h2>Slide 3</h2>
+
+    <button ion-button [navPush]="pushPage" [navParams]="params" (click)="login()" class="login-button google" >Login</button>
+    <br>
+    <button ion-button  [navPush]="pushPage" [navParams]="params" (click)="redirect()" class="login-button google" > Not Now </button>
+
+  </ion-slide>
+
+  </ion-slides>

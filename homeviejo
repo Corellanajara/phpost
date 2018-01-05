@@ -1,0 +1,105 @@
+<ion-header>
+  <ion-navbar>
+    <ion-avatar class="avatar">
+    <img src="assets/imgs/gatouser.jpeg"  align="left">
+    <br>
+    <ion-title align="rigth">PhilantroPosts</ion-title>
+    </ion-avatar>
+
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding ngOninit="LoadJson()">
+
+
+  <button ion-button (click)="LoadJson()">Actualizar</button>
+
+  <ion-list>
+      <ion-item *ngFor="let item of posts">
+            <h2>{{item.meal}}</h2>
+
+            <ion-item *ngFor="let subitem of item.items">
+                <h3>{{subitem.item}} : {{subitem.price}} $</h3>
+            </ion-item>
+
+          </ion-item>
+  </ion-list>
+
+  <ion-card>
+
+  <ion-item>
+    <ion-avatar item-start>
+      <img src="assets/imgs/gatolentes.png">
+    </ion-avatar>
+    <h2>Gato Hipster</h2>
+    <p>12 diciembre 2017</p>
+  </ion-item>
+
+  <img src="assets/imgs/gatonavidad.jpg" height="52%" width="72%">
+
+  <ion-card-content>
+    <p>LLego Navidad!!! Feliz navidah, Feliz navidah , Prospero año y felicidah</p>
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="thumbs-up"></ion-icon>
+        <div>12 Likes</div>
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="text"></ion-icon>
+        <div>4 Comments</div>
+      </button>
+    </ion-col>
+    <ion-col center text-center>
+      <ion-note>
+        11h ago
+      </ion-note>
+    </ion-col>
+  </ion-row>
+
+</ion-card>
+
+<ion-card>
+
+<ion-item>
+  <ion-avatar item-start>
+    <img src="assets/imgs/gatochino.png">
+  </ion-avatar>
+  <h2>Gato Chino</h2>
+  <p>12 diciembre 2017</p>
+</ion-item>
+
+<img src="assets/imgs/gatosushi.jpg" height="52%" width="72%">
+
+<ion-card-content>
+  <p>Aprende a hacer sushi sin quedar p'al gato en el camino!</p>
+</ion-card-content>
+
+<ion-row>
+  <ion-col>
+    <button ion-button icon-left clear small>
+      <ion-icon name="thumbs-up"></ion-icon>
+      <div>34 Likes</div>
+    </button>
+  </ion-col>
+  <ion-col>
+    <button ion-button icon-left clear small>
+      <ion-icon name="text"></ion-icon>
+      <div>46 Comments</div>
+    </button>
+  </ion-col>
+  <ion-col center text-center>
+    <ion-note>
+      11h ago
+    </ion-note>
+  </ion-col>
+</ion-row>
+
+</ion-card>
+
+</ion-content>

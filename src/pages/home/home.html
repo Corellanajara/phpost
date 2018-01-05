@@ -1,0 +1,172 @@
+<ion-header>
+  <ion-navbar>
+    <ion-avatar [navPush]="pushPage" [navParams]="params" (click)="user_redirect()">
+
+      <img [navPush]="pushPage" [navParams]="params" (tap)="profile_redirect(item.user)" src={{user.profileImage}}>
+
+      <ion-title>PhilantroPosts</ion-title>
+
+    </ion-avatar>
+
+
+    <ion-buttons end>
+      <button ion-button icon-only [navPush]="pushPage" [navParams]="params" (click)="user_redirect()">
+        <ion-icon name="logo-usd">&nbsp;{{user.current}}</ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+
+
+  <ion-list>
+
+    <ion-item *ngFor="let item of tmp">
+
+      <!--   <ion-card *ngIf="item.type !='campaing' ">      Reemplazar la de abajo por esta linea para que aparezcan solo cuando no son campaña  -->
+      <ion-card>
+
+        <ion-item>
+          <ion-grid>
+            <ion-row>
+              <ion-col align-self-start>
+                <div>
+
+                  <ion-avatar item-start>
+                    <img class="loading" [navPush]="pushPage" [navParams]="params" (tap)="profile_redirect(item.user)" src={{item.user.profileImage}}>
+
+                  </ion-avatar>
+                  <small>{{item.user.occupation}} </small>
+                </div>
+              </ion-col>
+              <ion-col align-self-center>
+                <div>
+                  <h2 [navPush]="pushPage" [navParams]="params" (tap)="profile_redirect(item.user)">{{item.user.name}}</h2>
+                </div>
+              </ion-col>
+              <ion-col>
+                <div *ngIf="item.user.id==1">
+                  <ion-buttons end>
+                    <button ion-button outline color="light" name="button" (tap)="options(item)"><ion-icon name="md-close"></ion-icon>
+                    </button>
+                  </ion-buttons>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+
+
+
+        </ion-item>
+
+
+        <ion-card-title padding="12">
+          {{item.title}}
+        </ion-card-title>
+
+
+
+
+        <img (tap)="image(item)" class="loading" src="{{item.image}}" height="52%" width="72%">
+
+
+        <ion-card-content>
+          <p>{{item.text}}</p>
+        </ion-card-content>
+
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-left clear small (tap)="like(item)">
+               <ion-icon name="thumbs-up"></ion-icon>
+               <div>{{item.likes}} Likes</div>
+             </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-left clear small (tap)="comment(item)">
+               <ion-icon name="text"></ion-icon>
+               <div>{{item.comments}} Comments</div>
+             </button>
+          </ion-col>
+
+        </ion-row>
+
+      </ion-card>
+
+
+
+
+
+      <!--         <ion-content class="card-background-page" *ngIf="item.type =='campaing' ">  usar solo cuando si es campaña-->
+      <ion-content class="card-background-page">
+        <ion-card>
+          <ion-item>
+            <ion-grid>
+              <ion-row>
+                <ion-col align-self-start>
+                  <div>
+
+                    <ion-avatar item-start>
+                      <img src="http://s03.s3c.es/imag/_v0/770x420/7/6/f/GettyImages-522796439.jpg">
+
+                    </ion-avatar>
+
+                  </div>
+                </ion-col>
+                <ion-col align-self-center>
+                  <div>
+                    <h2>Nombre </h2>
+                  </div>
+                </ion-col>
+                <ion-col>
+
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+
+
+
+
+          </ion-item>
+
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Paulista_Avenue%2C_S%C3%A3o_Paulo%2C_Brazil.jpg/220px-Paulista_Avenue%2C_S%C3%A3o_Paulo%2C_Brazil.jpg" />
+          <div class="card-title">Revolution!</div>
+          <div class="card-subtitle">41 people joined</div>
+        </ion-card>
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-left clear small (tap)="like(item)">
+                  <ion-icon name="thumbs-up"></ion-icon>
+                  <div>Join!</div>
+                </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-left clear small (tap)="comment(item)">
+                  <ion-icon name="text"></ion-icon>
+                  <div>x People are interesting</div>
+                </button>
+          </ion-col>
+
+        </ion-row>
+
+      </ion-content>
+
+
+    </ion-item>
+
+
+  </ion-list>
+
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+
+
+
+
+</ion-content>
