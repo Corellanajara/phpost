@@ -52,7 +52,5 @@ export class SettingsPage {
   socialnetwork(){
       this.navCtrl.push('SocialnetworkPage');
   }
-  campaign(){
-      this.navCtrl.push('CampaignPage');
-  }
+  
 }

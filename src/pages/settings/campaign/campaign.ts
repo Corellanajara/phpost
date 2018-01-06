@@ -70,4 +70,9 @@ export class CampaignPage {
     });
   }
 
+  create(campaign){
+    //this.api.campaignPost(campaign);
+    console.log("campaign was created succefully")
+  }
+
 }

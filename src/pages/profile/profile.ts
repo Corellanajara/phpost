@@ -10,7 +10,7 @@ import {ProfilesProvider} from '../../providers/profiles/profiles'
 export class ProfilePage {
 
 
-  
+
   following = false;
 
   user = {
@@ -71,7 +71,9 @@ export class ProfilePage {
       this.user.description = Profile.description;
     }
   }
-
+  campaign(){
+      this.navCtrl.push('CampaignPage');
+  }
   follow() {
     this.following = !this.following;
 

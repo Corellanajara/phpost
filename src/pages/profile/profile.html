@@ -17,7 +17,7 @@
       <button ion-button *ngIf="following" class="follow-button" small color="purple" (click)="follow()">Following<ion-icon name="checkmark"></ion-icon></button>
 
       <button ion-button small name="button" (click)="EditProfile(user)">Edit Profile</button>
-      
+
     </div>
     <hr/>
     <ion-row class="profile-numbers">
@@ -36,6 +36,9 @@
 
     </ion-row>
 
+    <ion-item>
+        <button ion-item (click)="campaign()"><ion-icon name='ios-clipboard-outline' item-start></ion-icon>&nbsp;Create Campaign</button>
+    </ion-item>
 
     <div id="posts">
       <ion-card *ngFor="let post of posts">
